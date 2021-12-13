@@ -1,25 +1,27 @@
-const express = require("express");
+const express = require('express');
 
 const app = express();
 
+app.set('view engine', 'ejs');
+
 app.listen(3000);
 
-app.get("/", (req, res) => {
-  res.sendFile("./views/index.html", { root: __dirname });
+app.get('/', (req, res) => {
+  res.render('index', { title: 'Home Page' });
 });
 
-app.get("/about", (req, res) => {
-  res.sendFile("./views/about.html", { root: __dirname });
+app.get('/about', (req, res) => {
+  res.render('about', { title: 'About Page' });
 });
 
-app.get("/who", (req, res) => {
-  res.sendFile("./views/who.html", { root: __dirname });
+app.get('/who', (req, res) => {
+  res.render('who', { title: 'Who? Page' });
 });
 
-app.get("/exercises", (req, res) => {
-  res.sendFile("./views/exercises.html", { root: __dirname });
+app.get('/exercises', (req, res) => {
+  res.render('exercises', { title: 'Exercises Page' });
 });
 
 app.use((req, res) => {
-  res.sendFile("./views/404.html", { root: __dirname });
+  res.status(404).render('404', { title: 'No Page Here' });
 });

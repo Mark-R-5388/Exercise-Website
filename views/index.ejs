@@ -1,21 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercise Website</title>
-  </head>
+  <%- include('./partials/head.ejs') %>
   <body>
-    <nav>
-      <ul>
-        <li><a href="/">Home Page</a></li>
-
-        <li><a href="/about">What This Is</a></li>
-        <li><a href="/who">Who Is It For?</a></li>
-        <li><a href="/exercises">Exercise Descriptions</a></li>
-      </ul>
-    </nav>
+    <%- include('./partials/navbar.ejs') %>
 
     <main class="container home-main">
       <h1 class="main-title">Welcome To The Exercise Website</h1>
@@ -35,6 +22,6 @@
         aliquid molestiae sequi, cupiditate et voluptas optio saepe ullam?
       </p>
     </main>
-    <footer class="footer">Copyright &COPY; 2021 by Mark Rose</footer>
+    <%- include('./partials/footer.ejs') %>
   </body>
 </html>
