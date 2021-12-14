@@ -1,0 +1,22 @@
+body {
+  background: rgb(231, 231, 241);
+}
+
+.exercise-container {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exercise-image {
+  padding: 1em;
+  width: 40%;
+  height: 20em;
+  object-fit: cover;
+}
+
+.exercise-description {
+  padding: 1em;
+  width: 40%;
+}
