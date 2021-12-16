@@ -1,5 +1,29 @@
+/* Typography */
+a {
+  text-decoration: none;
+  color: black;
+}
+
 body {
   background: rgb(231, 231, 241);
+}
+
+/* Navigation */
+.nav-container {
+  color: #fff;
+  background: rgb(2, 2, 253);
+}
+
+.links-container {
+  border: 1px solid black;
+}
+
+.nav-container ul {
+  list-style: none;
+}
+
+.nav-container a {
+  color: #fff;
 }
 
 .exercise-container {
